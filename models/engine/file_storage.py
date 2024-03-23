@@ -33,7 +33,7 @@ class FileStorage:
         if not obj:
             return
 
-        key = obj.__class__..__name__ + "." + str(obj.id)
+        key = obj.__class__.__name__ + "." + str(obj.id)
 
         if key in FileStorage.__objects.keys():
             del FileStorage.__objects[key]
